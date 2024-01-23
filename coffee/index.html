@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee :: Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class="wrapper">
+
+    <header class="header">
+
+        <div class="container">
+            <div class="header-top d-flex justify-content-between">
+                <ul class="languages list-inline m-0">
+                    <li class="list-inline-item"><a href="#">RU</a></li>
+                    <li class="list-inline-item"><a href="#" class="active">EN</a></li>
+                </ul>
+
+                <a href="tel:+371000000" class="header-phone">+371000000</a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+                     aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reservation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="nav-icons"></div>
+
+            </div>
+        </nav>
+
+        <ul class="header-icons d-none">
+            <li>
+                <a href="#">
+                    <span class="icon-user">
+                        <img src="assets/user%201.svg" alt="">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-favorite"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#offcanvasCart" data-bs-toggle="offcanvas">
+                    <span class="icon-cart"><span></span></span>
+                </a>
+            </li>
+        </ul>
+        <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart"
+             aria-labelledby="offcanvasCart" data-bs-theme="dark">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div class="minicart-product-row">
+                    <img src="assets/" alt="">
+                    <div class="minicart-product-info">
+                        <p class="product-name">Lavazza Crema E Gusto</p>
+                        <p class="product-variation">XL</p>
+                        <p class="product-qty">
+                            <input type="number" value="2" min="1"> &times; $19.99
+                        </p>
+                    </div>
+                    <a href="#" class="minicart-delete-product">
+                        <span class="icon-trash"></span>
+                    </a>
+                    <a href="#" class="minicart-update-product">⟳</a>
+                </div>
+
+                <div class="minicart-product-row">
+                    <img src="assets/" alt="">
+                    <div class="minicart-product-info">
+                        <p class="product-name">Lavazza Crema E Gusto</p>
+                        <p class="product-variation">XL</p>
+                        <p class="product-qty">
+                            <input type="number" value="2" min="1"> &times; $19.99
+                        </p>
+                    </div>
+                    <a href="#" class="minicart-delete-product">
+                        <span class="icon-trash"></span>
+                    </a>
+                    <a href="#" class="minicart-update-product">⟳</a>
+                </div>
+
+                <div class="minicart-product-row">
+                    <img src="assets/" alt="">
+                    <div class="minicart-product-info">
+                        <p class="product-name">Lavazza Crema E Gusto</p>
+                        <p class="product-variation">XL</p>
+                        <p class="product-qty">
+                            <input type="number" value="2" min="1"> &times; $19.99
+                        </p>
+                    </div>
+                    <a href="#" class="minicart-delete-product">
+                        <span class="icon-trash"></span>
+                    </a>
+                    <a href="#" class="minicart-update-product">⟳</a>
+                </div>
+
+                <hr>
+
+                <div class="minicart-total-price">
+                    <h5>Total Price: $178.98</h5>
+                    <button class="btn btn-outline-secondary">Update cart</button>
+                </div>
+
+                <hr>
+
+                <div class="minicart-btn">
+                    <a href="#" class="btn btn-outline-secondary">Cart</a>
+                    <a href="#" class="btn btn-warning">Checkout</a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main home-page">
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section-content">
+                    <h1>Roasted coffee best choice</h1>
+                    <p>The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.
+                        given an opportunity to sample.</p>
+                    <a href="#" class="btn btn-warning">Buy now</a>
+                    <a href="#" class="btn btn-outline-secondary">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-section-inner">
+                    <div class="banner-section-img">
+                        <img src="assets/image.jpg" alt="Roasted Coffee">
+                    </div>
+                    <div class="banner-section-content">
+                        <h3>Roasted Coffee</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                            need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                            Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                            making this the first true generator on the Internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <h3 class="h-title">Catalog</h3>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                        <small>$29.99</small>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee Lavazza coffee Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                        <small>$29.99</small>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                        <small>$29.99</small>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                        <small>$29.99</small>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img class="product-image-card" src="assets/product1%201.jpg" alt="product">
+                            </div>
+                            <div class="product-card-content">
+                                <h3><a href="#">Lavazza coffee</a></h3>
+                                <div class="product-card-details">
+                                    <div class="product-price">
+                                        <span>$19.99</span>
+                                        <small>$29.99</small>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="#" class="add2favorite">
+                                            <span class="icon-favorite"></span>
+                                        </a>
+                                        <a href="#" class="add2cart">
+                                            <span class="icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="container">
+                <h3 class="h-title">News</h3>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/news.jpg" class="card-img-top" alt="news">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Lavazza coffee</a></h5>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have suffered alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/news.jpg" class="card-img-top" alt="news">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Lavazza coffee</a></h5>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have suffered alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable. , or
+                                    randomised words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/news.jpg" class="card-img-top" alt="news">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Lavazza coffee</a></h5>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have suffered alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-logo-inner">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/logo.svg" alt="footer">
+                        <span>CoffeMeet</span>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <ul class="footer-menu list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Reservation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <ul class="footer-menu footer-menu-last list-unstyled">
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

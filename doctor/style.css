@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif !important;
+}
+body{
+    background-color: white;
+}
+
+/*Header*/
+.header{
+    margin-top: 5%;
+}
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.44;
+    text-decoration: none;
+    color: #462E6A;
+}
+.logo:hover{
+    text-decoration: none;
+    color: #462E6A;
+}
+.nav-item{
+    color: #1F1534;
+    opacity: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44;
+    text-decoration: none;
+}
+.nav-item:hover{
+    color: #2E4E92;
+    opacity: 100%;
+}
+/*Header*/
+/*MAIN*/
+.virtual-health{
+    margin-top: 184px;
+    margin-bottom: 196px;
+}
+.virtual-health-left{
+    margin-top: 3%;
+}
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.44;
+    color: #3C567B;
+}
+.article{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #93C1F9;
+    line-height: 1.44;
+}
+.btn-text{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.44;
+    color: #FFFFFF;
+}
+.virtual-health .container .row .col-lg-6 .btn-primary{
+    background-color: #458FF6 !important;
+    width: 191.24px;
+    border-radius: 55px;
+    padding: 20px;
+}
+.virtual-health-img{
+    position: absolute;
+    width: 577px;
+    height: 392px;
+}
+/*services*/
+.services{
+    margin-top: 110px;
+    background-color: #F3FBFF;
+}
+.services .container .d-block .title{
+    padding-top: 110px !important;
+    padding-bottom: 36px !important;
+}
+.services .card{
+    width: 375px;
+    height: 354px;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 10px 40px 50px 0 #E5E9F6;
+}
+.services .card .card-img-top{
+    text-align: center !important;
+    margin: auto;
+}
+.services .container .d-block  .article{
+    margin-bottom: 111px !important;
+    color: #A7A7A7;
+}
+.card-img-top{
+    margin-top: 54px !important;
+    width:98.55px !important;
+    height: 90px !important;
+    left: 138px;
+}
+.card-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.44;
+    color: #000000;
+    margin-top: 22px !important;
+}
+.card-text{
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.44;
+    color: #7D7987;
+    margin-top: 1.41px !important;
+    margin-bottom: 46px !important;
+}
+.btn-outline-secondary{
+    border: 1.4px solid #458FF6 !important;
+    width: 282px;
+    border-radius: 55px;
+    color: #458FF6;
+    justify-content: center;
+    margin: 69px auto;
+}
+.btn-outline-secondary:hover{
+    color: #458FF6;
+    background-color: white;
+}
+/*services*/
+/*healthcare*/
+.healthcare{
+    margin-top: 110px;
+    margin-bottom: 224px;
+}
+.healthcare .container .row .virtual-health-left .btn-outline-secondary{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.healthcare .container .row .virtual-health-left .btn-outline-secondary:hover{
+    color: white;
+    background-color:#458FF6;
+}
+.pb-1{
+    padding-bottom: 5px !important;
+}
+/*healthcare*/
+/*download*/
+.download .container .row .virtual-health-left .btn-outline-secondary{
+
+}
+.download .container .row .virtual-health-left .btn-outline-secondary:hover{
+    color: white;
+    background-color:#458FF6;
+}
+/*download*/
+/*find*/
+.find{
+    margin-top: 110px;
+    margin-bottom: 229px !important;
+    background-color: #F3FBFF;
+    height: 80rem;
+}
+.find .container form{
+    margin-top: 219px !important;
+    margin-bottom: 229px !important;
+}
+/*form*/
+.form-control{
+    border-radius: 22px;
+    background-color: rgba(90, 152, 242, 1);
+}
+.form-control div{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.form-control input{
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    margin-bottom: 55px;
+}
+.form-control button{
+    background-color: transparent !important;
+    width: 508px;
+    border-radius: 55px;
+    border: 1.4px solid #FFFFFF;
+}
+.form-control button:hover{
+    border: 1.4px solid #FFFFFF;
+}
+input.form-control::placeholder{
+    color: white;
+}
+form .text-center{
+    color: white;
+}
+/*form*/
+/*find*/
+/*MAIN*/
+/*footer*/
+.footer{
+    background-color: rgb(104, 136, 200, 1);
+    padding-top: 110px;
+}
+.footer a.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 29px;
+}
+.footer .article{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.footer .post{
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-nav-item{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-nav-item:hover{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/*footer*/
